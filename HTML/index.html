@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <meta name="Thulasitharan" content="Translator">
+    <title>
+        Translator website
+    </title>
+    <link rel="icon" href="../images/icon-img.jfif">
+
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+        }
+        header{
+            background-color:rgb(14, 114, 14);
+            padding: 10px 20px;
+            text-align: center;
+            color:azure;
+
+        }
+        nav{
+            display:flex;
+            justify-content: center;
+            background-color:rgb(63, 102, 117);
+        }
+        nav a{
+            text-decoration: none;
+            padding:10px 10px;
+            color:azure;
+            font-weight: bold; 
+        }
+        #first{
+            text-align:center;
+            padding:10px 20px;
+            width: 50%;
+            margin: 0 auto;
+        }
+        footer{
+            background-color: darkgreen;
+            padding: 10px;
+            text-align:center;
+            color:azure;
+            font-weight: bold;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    
+       
+
+    </style>
+
+</head>
+<body>
+   <header>
+       <h1>Welcome To the Translator </h1>
+       <p>Explore what ever you need to translate a words</p>
+   </header>
+
+   <nav>
+    <a href="#">HOME</a>
+    <a href="#">ABOUT</a>
+    <a href="#">SERVICE</a>
+    <a href="contact.html">CONTACT</a>
+   </nav>
+   
+   <main id="first">
+    <h2>About us</h2>
+    <p>Welcome to our platform, where passion meets innovation. We are a dynamic team of creators, thinkers, and problem-solvers dedicated to delivering exceptional solutions in the realm of full-stack web development.With expertise spanning modern technologies and hands-on experience through various internships and masterclasses, our journey is fueled by a commitment to excellence. Whether crafting seamless user experiences or building robust back-end systems, we strive to push boundaries and drive impactful results. Join us as we continue to grow, innovate, and shape the digital future.</p>
+
+   </main>
+
+   <!-- <iframe src="https://thulasitharun-in.web.app/#home" height="600px" width="1400px"></iframe> -->
+
+    <footer>
+        Designed By Thulasitharan
+    </footer>
+       
+    <div id="google_translate_element"></div>
+
+     <script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script> 
+
+     <script>
+         function googleTranslateElementInit(){
+             new  google.translate.TranslateElement(
+                { pagelanguage:"en"},
+                "google_translate_element"
+             );
+         }
+     </script>
+</body>
+
+</html>
